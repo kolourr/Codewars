@@ -1,0 +1,8 @@
+function findMultiples(integer, limit) {
+    let arr = []
+    let newLimit = Math.floor(limit/integer) 
+    for(let i=1; i<=newLimit; i++){
+       arr.push(integer * i) 
+    }
+  return arr
+}
