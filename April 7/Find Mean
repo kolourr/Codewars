@@ -1,0 +1,10 @@
+// Find Mean
+// Find the mean (average) of a list of numbers in an array.
+
+
+var findAverage = function (nums) {
+  
+return Math.floor(nums.reduce((sum, x) => sum + x) / nums.length);
+ 
+                        
+}

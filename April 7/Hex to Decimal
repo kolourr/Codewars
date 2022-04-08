@@ -1,0 +1,28 @@
+// Hex to Decimal
+
+function hexToDec(hexString){
+ return  parseInt(hexString, 16);
+}
+
+function hexToDec(hexString){
+  var ten=parseInt(hexString,16);
+  return ten;
+}
+// The parseInt() function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems).
+ 
+// function roughScale(x, base) {
+//   const parsed = parseInt(x, base);
+//   if (isNaN(parsed)) { return 0; }
+//   return parsed * 100;
+// }
+
+// console.log(roughScale(' 0xF', 16));
+// // expected output: 1500
+
+// console.log(roughScale('321', 2));
+// // expected output: 0
+
+// string
+// The value to parse. If this argument is not a string, then it is converted to one using the ToString abstract operation. Leading whitespace in this argument is ignored.
+// radix_ Optional_
+// An integer between 2 and 36 that represents the radix (the base in mathematical numeral systems) of the string. Be careful—this does not default to 10! If the radix value is not of the Number type it will be coerced to a Number.
