@@ -1,0 +1,65 @@
+// Convert integers to binary as simple as that. You would be given an integer as a argument and you have to return its binary form. To get an idea about how to convert a decimal number into a binary number, visit here.
+
+// Notes: negative numbers should be handled as two's complement; assume all numbers are integers stored using 4 bytes (or 32 bits) in any language.
+
+// Your output should ignore leading 0s.
+
+// So, for example:
+
+// toBinary(3)=="11"
+// toBinary(-3)=="11111111111111111111111111111101"
+
+
+
+// Short answer:
+// The toString() function takes the decimal, converts it to binary and adds a "-" sign.
+
+// A zero fill right shift converts it's operands to signed 32-bit integers in two complements format.
+
+// A more detailed answer:
+// Question 1:
+
+// //If you try
+// (-3).toString(2); //show "-11"
+// It's in the function .toString(). When you output a number via .toString():
+
+// Syntax
+
+// numObj.toString([radix])
+
+// If the numObj is negative, the sign is preserved. This is the case even if the radix is 2; the string returned is the positive binary representation of the numObj preceded by a - sign, not the two's complement of the numObj.
+
+// It takes the decimal, converts it to binary and adds a "-" sign.
+
+// Base 10 "3" converted to base 2 is "11"
+// Add a sign gives us "-11"
+// Question 2:
+
+// // but if you fake a bit shift operation it works as expected
+//         (-3 >>> 0).toString(2); // print "11111111111111111111111111111101"
+// A zero fill right shift converts it's operands to signed 32-bit integers. The result of that operation is always an unsigned 32-bit integer.
+
+// The operands of all bitwise operators are converted to signed 32-bit integers in two's complement format.
+
+
+// -3 >>> 0 (right logical shift) coerces its arguments to unsigned integers, which is why you get the 32-bit two's complement representation of -3.
+
+
+https://www.youtube.com/watch?v=4qH4unVtJkE&ab_channel=BenEater
+
+ 
+
+ANSWER 
+
+
+function toBinary(n){
+
+    return n> 0 ? n.toString(2) : (n >>> 0).toString(2);
+     
+   }
+
+
+   function toBinary(n){
+    return (n >>> 0).toString(2);
+    }
+    
