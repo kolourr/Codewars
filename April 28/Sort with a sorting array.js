@@ -16,4 +16,4 @@ function sort(initialArray, sortingArray) {
     
     return  Object.values(arr)
      
-  }
+  } 
