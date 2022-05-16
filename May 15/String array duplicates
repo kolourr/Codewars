@@ -8,3 +8,23 @@ dup(["kelless","keenness"]) = ["keles","kenes"].
 
 Strings will be lowercase only, no spaces. See test cases for more examples.
 
+
+function dup(s) {
+  
+    let newArr = [];
+    let newArr2 = [];
+      
+       s.map(item => {
+          item.split('').reduce((acc, value, index, arr) => {
+             if (arr[index] !== arr[index+1]) {
+                newArr.push(arr[index]);
+             }
+             if (index === arr.length-1) {
+                newArr2.push(newArr.join(''));
+                newArr.length = 0
+             }
+          }, 0);
+       });
+      return newArr2
+    
+    };
