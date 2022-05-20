@@ -25,3 +25,8 @@ for(let i = 0; i < b.length; i++) {
 return newArr
 
 }
+
+Better solution 
+
+
+const solve = (a,b) => b.map(x => a.filter(n => n === x).length);
