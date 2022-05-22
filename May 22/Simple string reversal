@@ -1,0 +1,51 @@
+For example:
+
+solve("our code") = "edo cruo"
+-- Normal reversal without spaces is "edocruo". 
+-- However, there is a space at index 3, so the string becomes "edo cruo"
+
+solve("your code rocks") = "skco redo cruoy". 
+solve("codewars") = "srawedoc"
+More examples in the test cases. All input will be lower case letters and in some cases spaces.
+
+function solve(str)
+{
+  var s = "";
+  for (let i = str.length - 1; i >= 0; i--)
+  {
+    if (str[i] != " ")        s += str[i];
+    if (str[s.length] == " ") s += str[s.length];
+  }
+  return s;
+}
+
+
+Other Solution 
+
+let inputArray = str.split("");
+let result = new Array(inputArray.length);
+
+// Mark spaces in result
+for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i] == ' ') {
+        result[i] = ' ';
+    }
+}
+
+// Traverse input string from beginning
+// and put characters in result from end
+let j = result.length - 1;
+for (let i = 0; i < inputArray.length; i++) {
+
+    // Ignore spaces in input string
+    if (inputArray[i] != ' ') {
+
+        // ignore spaces in result.
+        if (result[j] == ' ') {
+            j--;
+        }
+        result[j] = inputArray[i];
+        j--;
+    }
+}
+document.write((result).join(""));
