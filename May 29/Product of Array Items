@@ -1,0 +1,17 @@
+Calculate the product of all elements in an array.
+
+If the array is null or is empty, the function should return null.
+
+
+
+
+function product(values) {
+  if(values == [] || values == null || values == '' ) return null
+ 
+
+  return  values.reduce((acc, index) => acc * index, 1)
+ 
+
+}
+
+ 
