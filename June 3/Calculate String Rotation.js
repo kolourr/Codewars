@@ -10,3 +10,7 @@ Examples:
 "isn't", "'tisn" => 2
 "Esham", "Esham" => 0
 "dog", "god" => -1
+
+
+const shiftedDiff = (first, second) =>
+  first.length === second.length ? second.repeat(2).indexOf(first) : -1;
