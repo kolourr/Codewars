@@ -20,9 +20,6 @@ function cyclicString(s) {
   }
   return i;
 }
-
-
-
 Better solution 
 
 const cyclicString = (s, i = 1) =>

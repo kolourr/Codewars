@@ -29,11 +29,9 @@ function sortMyString(S) {
       if(i % 2 !== 0){
         oddArr.push(arr[i])
       }
-      else{
+      else{ 
         evenArr.push(arr[i])
       } 
     }
-    
     return  evenArr.join("") + ` ` +  oddArr.join("") 
-   
   }
