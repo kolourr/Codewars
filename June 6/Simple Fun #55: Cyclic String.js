@@ -22,5 +22,5 @@ function cyclicString(s) {
 }
 Better solution 
 
-const cyclicString = (s, i = 1) =>
-  s.startsWith(s.slice(i)) ? i : cyclicString(s, ++i);
+const cyclicString = (s, i = 1) =>      
+  s.startsWith(s.slice(i)) ? i : cyclicString(s, ++i); 
