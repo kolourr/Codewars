@@ -6,8 +6,8 @@ should return
 
 H W  
 e o  
-l r  
-l l  
+l r    
+l l     
 o d
 A few things to note:
 
