@@ -22,3 +22,4 @@ input = [
   "a*cd*"
 ]
 result = "a#cd#"
+  
