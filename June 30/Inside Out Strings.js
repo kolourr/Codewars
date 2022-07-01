@@ -22,7 +22,7 @@ function insideOut(x){
         }
       }
       
-      else{
+      else{ 
         newArr.push(arr[i])
       }
       
