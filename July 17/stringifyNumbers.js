@@ -13,7 +13,7 @@ function stringifyNumbers(obj){
                 newObj[item] = obj[item];
 
             }
-        })    
+        })       
      
     
     return newObj;      
