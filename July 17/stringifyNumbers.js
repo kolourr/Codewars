@@ -19,7 +19,7 @@ function stringifyNumbers(obj){
     return newObj;      
 }
    
-
+   
     
    
 var obj1 = {
