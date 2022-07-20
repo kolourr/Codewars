@@ -11,7 +11,7 @@ function stringifyNumbers(obj){
             }
             else{
                 newObj[item] = obj[item];
-
+ 
             }
         })          
      
@@ -20,7 +20,7 @@ function stringifyNumbers(obj){
 }
      
       
-       
+         
    
 var obj1 = {
     outer: 2,
