@@ -5,9 +5,9 @@ e.g. transposeTwoStrings(['Hello','World']);
 should return
 
 H W  
-e o  
+e o      
 l r    
-l l     
+l l           
 o d
 A few things to note:
 
