@@ -22,7 +22,7 @@ function transposeTwoStrings (array) {
     array[0].length > array[1].length ? longest = array[0].length : longest = array[1].length
       
     let str = ''
-    
+       
     for(let i=0; i<longest;i++){
       if(i != longest - 1){
         let str1, str2 
