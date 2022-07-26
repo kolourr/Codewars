@@ -17,7 +17,7 @@ If one string is longer than the other, there should be a space where the charac
 
 
 function transposeTwoStrings (array) {
-    let longest 
+    let longest  
     
     array[0].length > array[1].length ? longest = array[0].length : longest = array[1].length
       
