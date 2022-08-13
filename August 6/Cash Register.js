@@ -30,7 +30,7 @@ See below for an example of a cash-in-drawer array:
   ["QUARTER", 4.25],
   ["ONE", 90],
   ["FIVE", 55],
-  ["TEN", 20],
+  ["TEN", 20],  
   ["TWENTY", 60],
   ["ONE HUNDRED", 100]
 ]
