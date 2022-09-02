@@ -21,7 +21,7 @@ function stringifyNumbers(obj){
      
         
          
-   
+     
 var obj1 = {
     outer: 2,
     obj: {
