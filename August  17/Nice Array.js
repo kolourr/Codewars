@@ -22,3 +22,17 @@ examples:
 for n = 4, there is neither n - 1 = 3 nor n + 1 = 5
 Write a function named isNice/IsNice that returns true if its array argument is a Nice array, else false. An empty array is not considered nice.
 
+function isNice(arr){
+    if(arr.length == 0) return false 
+    let count = 0
+  
+    for(let i=0; i<arr.length; i++){
+      if(!arr.includes(arr[i] + 1) && !arr.includes(arr[i] - 1)){
+        count++
+      }
+    }
+   return count > 0 ? false : true 
+  
+  }
+  
+   
