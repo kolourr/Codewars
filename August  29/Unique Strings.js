@@ -10,3 +10,9 @@
 // uniqCount("AbcD") = 24n   // "ABCD", etc.
 
 // // Note that you should return a BigInt, not a Number
+function uniqCount(xs,count={},l=xs.toLowerCase()) {
+    if (!l.length) return 1n
+    const prev = uniqCount(xs.slice(1), count)
+    count[l[0]] = (count[l[0]] || 0) + 1
+    return prev * BigInt(l.length) / BigInt(count[l[0]])
+  }
