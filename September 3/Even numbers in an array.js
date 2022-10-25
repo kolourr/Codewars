@@ -8,9 +8,9 @@
 
 
 
-function nEvenNumbers(arr, num){
-   return  arr.filter(item => item % 2 == 0).slice(-num)
-}
+// function nEvenNumbers(arr, num){
+//    return  arr.filter(item => item % 2 == 0).slice(-num)
+// }
 
-
+const nEvenNumbers = (arr, num) => arr.filter(item => item % 2 == 0).slice(-num)
 console.log(nEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3))
