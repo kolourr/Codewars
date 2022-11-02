@@ -13,6 +13,13 @@
 // indexOf(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
 // lastIndexOf(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf)
 
+
+//Quadratic solution O(n2)
+//lastindexOf is expensive
+//Make it using hash maps you will use the optimizing
+//2(N) => O(N) solution - https://medium.com/@martin.crabtree/javascript-tracking-key-value-pairs-using-hashmaps-7de6df598257
+//Count all the values and put it in an object - we
+//Have this question memorized
 function dupEncoder(str){
 
   let newArr = str.toLowerCase().split("").map((item, index, arr) => {
@@ -30,6 +37,9 @@ function dupEncoder(str){
 
 
 }
+
+
+// Had a founder message me on YC's workforastartup  saying he thought I would be a good fit for a role and requested that I schedule a 1/2 meeting with him. So I did. He didnt show to the meeting. I email/messaged him - no response. Is this behaviour common?
 
 
 console.log(dupEncoder('recede'))
