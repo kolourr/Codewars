@@ -6,6 +6,10 @@
 
 function last(x){
 
+  //Will the string always be words and never have any special characters or spaces
+//Need to return a sorted array based on the last letter of the word
+//Sort is a lexigraphical sort
+//charcode at - starts counting at 0 - 0 indexed
   return x.split(" ").sort((a,b) => {
 
      if(a.charCodeAt(a.length - 1) > b.charCodeAt(b.length - 1 )){
@@ -18,7 +22,6 @@ function last(x){
        return 0
      }
    })
-
 
 
  }
