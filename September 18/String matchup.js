@@ -14,6 +14,16 @@
 
 // If you like this Kata, please try:
 
+
+function solve(a,b){
+
+    let ans =  b.map((item1, index, arr) => a.filter(item2 => item2 ==item1).length)
+
+    return ans
+
+
+  }
+
 function solve(a,b){
 
     let obj = {}
